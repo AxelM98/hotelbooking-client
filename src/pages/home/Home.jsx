@@ -6,20 +6,37 @@ import MailList from "../../components/mailList/MailList";
 import Navbar from "../../components/navbar/Navbar";
 import PropertyList from "../../components/propertyList/PropertyList";
 import "./home.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const Home = () => {
+AOS.init();
+
+const Home = ({setType, setCity}) => {
+  
   return (
     <div>
       <Navbar />
-      <Header/>
+      <Header />
       <div className="homeContainer">
-        <Featured/>
-        <h1 className="homeTitle">Browse by property type</h1>
-        <PropertyList/>
-        <h1 className="homeTitle">Homes guests love</h1>
-        <FeaturedProperties/>
-        <MailList/>
-        <Footer/>
+        <Featured setCity={setCity}/>
+        <h1
+          className="homeTitle"
+          data-aos="zoom-in-right"
+          data-aos-duration="1000"
+        >
+          Browse by property type
+        </h1>
+        <PropertyList setType={setType}/>
+        <h1
+          className="homeTitle"
+          data-aos="zoom-in-right"
+          data-aos-duration="1000"
+        >
+          Homes guests love
+        </h1>
+        <FeaturedProperties />
+        <MailList />
+        <Footer />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 .header {
-  background-color: #003580;
+  background-color: rgb(200, 0, 0);
   color: white;
   display: flex;
   justify-content: center;
@@ -9,7 +9,7 @@
 .headerContainer {
   width: 100%;
   max-width: 1024px;
-  margin: 20px 0px 100px 0px;
+  margin: 30px 0px 100px 0px;
 }
 
 .headerContainer.listMode {
@@ -26,6 +26,13 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  transition: all 0.7s;
+}
+
+.headerListItem:hover {
+  color: rgba(255, 255, 255, 0.507);
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .headerListItem.active {
@@ -39,12 +46,20 @@
 }
 
 .headerBtn {
-  background-color: #0071c2;
+  background-color: rgb(251, 63, 63);
   color: white;
-  font-weight: 500;
+  border-radius: 10px;
+  font-weight: 700;
   border: none;
-  padding: 10px;
+  padding: 10px 20px;
   cursor: pointer;
+  transition: all 0.7s;
+}
+
+.headerBtn:hover {
+  background-color: rgb(255, 61, 61);
+  box-shadow: 0 0 10px;
+  transform: scale(1.1);
 }
 
 .headerSearch {
@@ -92,8 +107,8 @@
   z-index: 2;
   position: absolute;
   top: 50px;
-  background-color: white;
-  color: gray;
+  background-color: rgb(254, 212, 212);
+  color: black;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
@@ -109,18 +124,25 @@
 .optionCounter {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 12px;
+  gap: 12px;
   color: black;
 }
 
 .optionCounterButton {
   width: 30px;
   height: 30px;
-  border: 1px solid #0071c2;
-  color: #0071c2;
+  border: 1px solid rgb(300, 35, 35);
+  color: rgb(300, 35, 35);
   cursor: pointer;
-  background-color: white;
+  font-size: 20px;
+  background: #fff;
+  border-radius: 100%;
+  transition: all 0.3s;
+}
+
+.optionCounterButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px;
 }
 
 .optionCounterButton:disabled {

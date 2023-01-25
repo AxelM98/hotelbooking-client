@@ -1,0 +1,10 @@
+.propertyCityList {
+    width: 100%;
+    height: 100vh;
+}
+
+.propertyCityList_main{
+    width: 100%;
+    height: calc(100vh - 163.33px);
+    margin-top: 20px;
+}

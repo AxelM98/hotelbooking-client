@@ -10,7 +10,12 @@
   flex:1;
   border-radius: 10px;
   overflow: hidden;
+  transition: all .7s;
+}
+
+.pListItem:hover{
   cursor: pointer;
+  transform: scale(0.9);
 }
 
 .pListImg{
@@ -22,6 +27,7 @@
 .pListTitles>h1{
   font-size: 18px;
   color: #444;
+  text-transform: capitalize;
 }
 
 .pListTitles>h2{

@@ -13,7 +13,7 @@
 
 .listSearch {
   flex: 1;
-  background-color: #febb02;
+  background-color: rgb(255, 217, 0);
   padding: 10px;
   border-radius: 10px;
   position: sticky;
@@ -70,12 +70,19 @@
 
 .listSearch>button{
   padding: 10px;
-  background-color: #0071c2;
+  background-color: rgb(255, 0, 0);
   color: white;
   border: none;
   width: 100%;
-  font-weight: 500;
+  font-weight: bold; /* org: 500px */
   cursor: pointer;
+  border-radius: 10px;
+  transition: all .7s;
+}
+
+.listSearch>button:hover {
+  background-color:rgb(255, 61, 61);
+  box-shadow: 0 0 10px;
 }
 
 .listResult {

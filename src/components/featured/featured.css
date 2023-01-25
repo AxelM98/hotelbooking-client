@@ -13,7 +13,14 @@
   border-radius: 10px;
   overflow: hidden;
   height: 250px;
-  flex:1
+  flex:1;
+  box-shadow: 0 0 40px 0 grey;
+  transition: all .7s;
+}
+
+.featuredItem:hover{
+  box-shadow: none;
+  cursor: pointer;
 }
 
 .featuredImg{

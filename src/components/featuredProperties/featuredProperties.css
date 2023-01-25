@@ -11,6 +11,12 @@
   gap: 10px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+  transition: all .7s;
+}
+
+.fpItem:hover {
+  transform: scale(1.1);
 }
 
 .fpImg{
@@ -26,6 +32,7 @@
 
 .fpCity{
   font-weight: 300;
+  text-transform: capitalize;
 }
 
 .fpPrice{
